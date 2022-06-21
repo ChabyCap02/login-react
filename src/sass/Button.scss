@@ -1,0 +1,34 @@
+@import 'config';
+
+.btn{
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    &-login{
+        background-color: $login-color;
+        &:hover{
+            background-color: $login-color-hover;
+        }
+    }
+    &-register{
+        background-color: $register-color;
+        &:hover{
+            background-color: $register-color-hover;
+        }
+    }
+    .login-icon{
+        display: flex;
+        align-items: center;
+    }
+}
